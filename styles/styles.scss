@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+body{
+  box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    }
+
+
+    nav{
+      margin-top: 10px;
+    }
+
+.textMain{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 100%; /* Establece el ancho máximo del contenedor */
+  height: auto; /* Establece la altura automáticamente para mantener la proporción */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+  font-size: 17px; /* Ajusta el tamaño del texto según sea necesario */
+  
+}
+
+p,.textMain{
+  font-size: 25px;
+}
+
+.mainNosotros{
+  display: flex;
+}
+
+
+/* Variables */
+$desktop-width: 768px;
+$tablet-width: 576px;
+
+.mainBlog{
+    width: 100%;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+/* Media queries */
+@media (max-width: $desktop-width) {
+    main{
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: $tablet-width) {
+    main{
+      padding: 5px;
+    }
+  }
+  
+  
+
+main div img{
+  display: flex;
+      justify-content: center;
+      align-items: center;
+    };
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .d-block {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+  }
+  
+  @media (min-width: 768px) { /* Media query para dispositivos de escritorio */
+    .d-block {
+      flex: 1 1 50%; /* Ocupa el 50% del ancho en dispositivos de escritorio */
+    }
+  }
+  
+  .item1,
+  .item4 {
+    margin-bottom: 30px; /* Agrega margen inferior entre las imágenes */
+  }
+  
+.item2{
+    font-size: 28px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.item3{
+    padding-top: 80px;
+}
+
+.item4{
+  padding-top: 79px;
+}
+
+h1{
+    text-align: center;
+}
+
+article {
+  display: flex;
+  margin-bottom: 20px;
+}
+.imgBicis {
+  flex: 1;
+  margin-right: 20px;
+}
+.contenido {
+  flex: 2;
+}
+.contenido .texto {
+  margin-bottom: 10px;
+}
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;}
+
+  .articleBicicletas{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .textCatalogoBici{
+    font-size: 15px;
+  }
+
+  .articleBlog{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+.imgFoo{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    padding-bottom: 10px;
+}
